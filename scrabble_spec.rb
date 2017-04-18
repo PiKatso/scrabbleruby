@@ -1,5 +1,5 @@
 require "rspec"
-require "scrabble.rb"
+require "./scrabble.rb"
 
 describe "Scrabble#tilevalues" do
   it("recognizes individual letters") do
