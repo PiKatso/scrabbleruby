@@ -16,6 +16,12 @@ describe "Scrabble#tiles" do
     expect(scrabble.tiles("E")).to(eq(1))
   end
   it("recognizes the corresponding values for all other letters") do
-    expect(scrabble.tiles("q")).to(eq(q0))
+    expect(scrabble.tiles("q")).to(eq(10))
+  end
+  it("recognizes and totals the letters in a word") do
+    expect(scrabble.tiles("dog")).to(eq(5))
+  end
+  it("recognizes multiple instances of the same letter") do
+    expect(scrabble.tiles("poop")).to(eq(8))
   end
 end
