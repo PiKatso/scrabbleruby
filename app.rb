@@ -8,3 +8,10 @@ require('pry')
 get('/') do
   erb(:index)
 end
+
+get('/score') do
+  @word = params.fetch('score')
+  scrabble = Scrabble.new
+  @score = scrabble.tiles(@word)
+  erb(:score)
+end
