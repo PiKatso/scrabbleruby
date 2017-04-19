@@ -1,5 +1,5 @@
 require "rspec"
-require "./Scrabble.rb"
+require "scrabble"
 
 describe "Scrabble#tiles" do
   scrabble = Scrabble.new
